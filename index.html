@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Energy Systems LLC — Solar for Indiana Homes, Farms & RVs | Nappanee, IN</title>
+<meta name="description" content="Nappanee-based solar installers for Indiana homes, farms, businesses, and RVs. Straight answers, local permitting know-how, and a free no-pressure solar quote.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --soil:#33241a;
+  --barn:#8f2d1e;
+  --barn-deep:#6e2015;
+  --amber:#d9932b;
+  --amber-soft:#e8b45f;
+  --sky:#7ea3b3;
+  --cream:#f7efe1;
+  --cream-deep:#efe3cd;
+  --panel:#243240;
+  --panel-line:#3a4c5e;
+  --ink-on-dark:#f7efe1;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Source Sans 3",system-ui,sans-serif;
+  background:var(--cream);
+  color:var(--soil);
+  line-height:1.6;
+  font-size:1.0625rem;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.disp{
+  font-family:"Barlow Condensed","Arial Narrow",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.01em;
+  line-height:.95;
+  font-weight:800;
+}
+a{color:var(--barn)}
+img{max-width:100%;display:block}
+.wrap{width:min(1120px,92vw);margin-inline:auto}
+.eyebrow{
+  font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-weight:700;
+  font-size:.85rem;
+  color:var(--barn);
+  display:flex;align-items:center;gap:.75rem;
+}
+.eyebrow::before{content:"";width:2.5rem;height:3px;background:var(--amber)}
+.btn{
+  display:inline-block;
+  font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:700;
+  font-size:1.15rem;
+  text-decoration:none;
+  padding:.85rem 1.9rem;
+  border:2px solid var(--barn);
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.btn-solid{background:var(--barn);color:var(--cream)}
+.btn-solid:hover{background:var(--barn-deep);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--amber)}
+.btn-ghost{background:transparent;color:var(--barn)}
+.btn-ghost:hover{background:var(--barn);color:var(--cream)}
+.btn-ghost.on-dark{border-color:var(--amber);color:var(--amber-soft)}
+.btn-ghost.on-dark:hover{background:var(--amber);color:var(--panel)}
+
+/* ---------- header ---------- */
+.topbar{
+  background:var(--soil);color:var(--cream);
+  font-size:.85rem;padding:.4rem 0;
+  text-align:center;letter-spacing:.04em;
+}
+.topbar a{color:var(--amber-soft);text-decoration:none;font-weight:600}
+header.site{
+  background:var(--cream);
+  border-bottom:3px solid var(--soil);
+  position:sticky;top:0;z-index:50;
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.75rem 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--soil)}
+.brand svg{width:44px;height:44px;flex:none}
+.brand-name{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:1.35rem;line-height:.95}
+.brand-name small{display:block;font-size:.62rem;letter-spacing:.28em;font-weight:700;color:var(--barn)}
+.nav-links{display:flex;gap:1.4rem;align-items:center;list-style:none;flex-wrap:wrap}
+.nav-links a{
+  font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+  letter-spacing:.1em;font-weight:700;font-size:1rem;
+  color:var(--soil);text-decoration:none;
+  border-bottom:3px solid transparent;padding-bottom:2px;
+}
+.nav-links a:hover{border-color:var(--amber)}
+.nav-links a.cta{border:2px solid var(--barn);color:var(--barn);padding:.4rem 1rem}
+.nav-links a.cta:hover{background:var(--barn);color:var(--cream)}
+@media (max-width:640px){.nav-links{gap:.9rem;font-size:.9rem}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:var(--cream)}
+.hero .wrap{
+  display:grid;gap:2.5rem;padding:3.5rem 0 4rem;
+  grid-template-columns:1fr;align-items:end;
+}
+.hero h1{
+  font-size:clamp(3rem,9vw,6.4rem);
+  color:var(--soil);
+}
+.hero h1 .sun{color:var(--barn)}
+.hero-lede{max-width:34rem;font-size:1.2rem;margin:1.4rem 0 2rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-figure{position:relative}
+.hero-figure img{
+  width:100%;aspect-ratio:16/10;object-fit:cover;
+  border:3px solid var(--soil);
+  box-shadow:12px 12px 0 var(--amber);
+}
+.hero-figure figcaption{
+  position:absolute;left:-3px;bottom:-3px;
+  background:var(--soil);color:var(--cream);
+  font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+  letter-spacing:.14em;font-size:.8rem;font-weight:700;
+  padding:.45rem 1rem;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:var(--cream-deep);border:2px solid var(--soil);
+  padding:.5rem 1rem;margin-top:1.6rem;
+  font-weight:600;font-size:.95rem;
+}
+.hero-badge .stars{color:var(--amber);letter-spacing:2px;font-size:1.05rem}
+.hero-sunrays{position:absolute;top:-70px;right:-70px;width:280px;height:280px;opacity:.9;pointer-events:none}
+@media (min-width:860px){
+  .hero .wrap{grid-template-columns:1.05fr .95fr;padding:5rem 0 5.5rem}
+}
+
+/* ---------- signature panel strip divider ---------- */
+.panel-strip{display:block;width:100%;height:auto;margin:0;line-height:0;background:var(--cream)}
+.panel-strip.flip{transform:scaleY(-1)}
+.panel-strip svg{display:block;width:100%;height:clamp(52px,8vw,96px)}
+
+/* ---------- serve section (ledger rows, not cards) ---------- */
+.serve{background:var(--panel);color:var(--ink-on-dark);padding:4.5rem 0 5rem}
+.serve h2{font-size:clamp(2.4rem,6vw,4.2rem);margin:.75rem 0 .5rem;color:var(--cream)}
+.serve .intro{max-width:38rem;color:#cdd8e0;margin-bottom:3rem}
+.serve .eyebrow{color:var(--amber-soft)}
+.row-svc{
+  display:grid;grid-template-columns:auto 1fr;gap:1rem 1.5rem;
+  padding:1.6rem 0;border-top:1px solid var(--panel-line);
+  align-items:baseline;
+  transition:background .2s ease;
+}
+.row-svc:last-of-type{border-bottom:1px solid var(--panel-line)}
+.row-svc:hover{background:rgba(217,147,43,.07)}
+.row-svc .num{
+  font-family:"Barlow Condensed",sans-serif;font-weight:800;
+  font-size:clamp(1.8rem,4vw,2.6rem);color:var(--amber);
+  min-width:3ch;
+}
+.row-svc h3{font-size:clamp(1.6rem,4vw,2.3rem);color:var(--cream);margin-bottom:.3rem}
+.row-svc p{color:#b9c6d0;max-width:44rem}
+.row-svc .tag{
+  display:inline-block;margin-top:.6rem;
+  font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+  letter-spacing:.16em;font-size:.75rem;font-weight:700;
+  color:var(--sky);border:1px solid var(--sky);padding:.15rem .6rem;
+}
+
+/* ---------- process ---------- */
+.process{padding:4.5rem 0 5rem;background:var(--cream)}
+.process h2{font-size:clamp(2.4rem,6vw,4.2rem);margin:.75rem 0 3rem}
+.steps{display:grid;gap:0;border-top:3px solid var(--soil)}
+.step{
+  display:grid;grid-template-columns:auto 1fr;gap:1.25rem;
+  padding:2rem 0;border-bottom:3px solid var(--soil);
+  align-items:start;
+}
+.step .mark{
+  width:3.2rem;height:3.2rem;flex:none;
+  background:var(--amber);color:var(--soil);
+  display:grid;place-items:center;
+  font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.6rem;
+  border:2px solid var(--soil);
+}
+.step h3{font-size:1.7rem;margin-bottom:.35rem}
+.step p{max-width:44rem}
+@media (min-width:860px){
+  .steps{grid-template-columns:1fr 1fr 1fr;border-top:none}
+  .step{grid-template-columns:1fr;border-bottom:none;border-top:3px solid var(--soil);padding:2rem 1.5rem 0 0}
+}
+
+/* ---------- education / how solar works ---------- */
+.learn{background:var(--cream-deep);padding:4.5rem 0 5rem}
+.learn-grid{display:grid;gap:2.5rem}
+.learn h2{font-size:clamp(2.2rem,5.5vw,3.6rem);margin:.75rem 0 1rem}
+.learn p{max-width:40rem}
+.learn ul{list-style:none;margin-top:1.5rem}
+.learn li{
+  padding:.85rem 0 .85rem 2rem;position:relative;
+  border-bottom:1px dashed #c9b78f;font-weight:600;
+}
+.learn li::before{
+  content:"";position:absolute;left:0;top:1.15rem;
+  width:.9rem;height:.9rem;background:var(--barn);
+  clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);
+}
+.sun-diagram{width:100%;max-width:420px;margin-inline:auto}
+@media (min-width:860px){.learn-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+
+/* ---------- proof ---------- */
+.proof{background:var(--barn);color:var(--cream);padding:4.5rem 0 5rem;position:relative}
+.proof h2{font-size:clamp(2.4rem,6vw,4rem);margin:.75rem 0 1.25rem}
+.proof .eyebrow{color:var(--amber-soft)}
+.proof .eyebrow::before{background:var(--amber-soft)}
+.proof-grid{display:grid;gap:2.5rem}
+.big-rating{
+  font-family:"Barlow Condensed",sans-serif;font-weight:800;
+  font-size:clamp(5rem,14vw,9rem);line-height:.85;color:var(--amber-soft);
+}
+.big-rating small{
+  display:block;font-size:1.05rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--cream);font-weight:700;margin-top:.6rem;
+}
+.proof p{max-width:38rem;color:#f3dfc9}
+@media (min-width:860px){.proof-grid{grid-template-columns:auto 1fr;gap:4rem;align-items:center}}
+
+/* ---------- quote / contact ---------- */
+.quote{padding:4.5rem 0 5.5rem;background:var(--cream)}
+.quote-grid{display:grid;gap:3rem}
+.quote h2{font-size:clamp(2.6rem,7vw,4.6rem);margin:.75rem 0 1rem}
+.quote p.lede{max-width:34rem;font-size:1.15rem}
+.contact-facts{margin-top:2rem;display:grid;gap:1.1rem}
+.contact-facts div{display:grid;gap:.1rem}
+.contact-facts dt{
+  font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;
+  letter-spacing:.18em;font-size:.78rem;font-weight:700;color:var(--barn);
+}
+.contact-facts dd{font-weight:600;font-size:1.05rem}
+.contact-facts a{text-decoration:none;color:var(--soil);border-bottom:2px solid var(--amber)}
+.qform{
+  background:var(--cream-deep);border:3px solid var(--soil);
+  padding:2rem 1.75rem;box-shadow:10px 10px 0 var(--amber);
+}
+.qform h3{font-size:1.8rem;margin-bottom:1.25rem}
+.qform label{
+  display:block;font-family:"Barlow Condensed",sans-serif;
+  text-transform:uppercase;letter-spacing:.14em;font-weight:700;
+  font-size:.8rem;margin:1rem 0 .3rem;color:var(--soil);
+}
+.qform input,.qform select,.qform textarea{
+  width:100%;padding:.7rem .8rem;border:2px solid var(--soil);
+  background:var(--cream);font:inherit;color:var(--soil);
+}
+.qform input:focus,.qform select:focus,.qform textarea:focus{outline:3px solid var(--amber);outline-offset:1px}
+.qform button{margin-top:1.5rem;width:100%;cursor:pointer;background:var(--barn);color:var(--cream);border:2px solid var(--barn);font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:1.2rem;padding:.9rem}
+.qform button:hover{background:var(--barn-deep)}
+.qform .fineprint{font-size:.82rem;margin-top:.8rem;color:#6b5847}
+@media (min-width:900px){.quote-grid{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--soil);color:#d8cbb8;padding:3rem 0 2rem}
+.foot-grid{display:grid;gap:2rem;padding-bottom:2rem;border-bottom:1px solid #4d3b2c}
+footer .brand-name{color:var(--cream)}
+footer a{color:var(--amber-soft);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.foot-nav{list-style:none;display:grid;gap:.5rem}
+.foot-nav a{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#d8cbb8}
+.legal{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;padding-top:1.4rem;font-size:.85rem}
+.legal .credit{color:#8f7c66}
+@media (min-width:760px){.foot-grid{grid-template-columns:1.3fr 1fr 1fr}}
+
+/* ---------- reveals ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(24px);animation:rise .8s ease forwards}
+  @supports (animation-timeline: view()){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">Nappanee-grown, Indiana-proud &nbsp;•&nbsp; Free quotes: <a href="tel:+15747730546">(574)&nbsp;773-0546</a></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Solar Energy Systems LLC home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="10" fill="#d9932b"/><g stroke="#8f2d1e" stroke-width="3" stroke-linecap="round"><line x1="24" y1="2" x2="24" y2="9"/><line x1="24" y1="39" x2="24" y2="46"/><line x1="2" y1="24" x2="9" y2="24"/><line x1="39" y1="24" x2="46" y2="24"/><line x1="8.4" y1="8.4" x2="13.4" y2="13.4"/><line x1="34.6" y1="34.6" x2="39.6" y2="39.6"/><line x1="8.4" y1="39.6" x2="13.4" y2="34.6"/><line x1="34.6" y1="13.4" x2="39.6" y2="8.4"/></g></svg>
+      <span class="brand-name">Solar Energy Systems<small>Nappanee, Indiana</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#serve">What We Install</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#learn">How Solar Works</a></li>
+        <li><a href="#quote" class="cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-sunrays" viewBox="0 0 200 200" aria-hidden="true"><g stroke="#d9932b" stroke-width="4" opacity=".55"><line x1="100" y1="100" x2="100" y2="0"/><line x1="100" y1="100" x2="170" y2="30"/><line x1="100" y1="100" x2="200" y2="100"/><line x1="100" y1="100" x2="170" y2="170"/><line x1="100" y1="100" x2="30" y2="30"/><line x1="100" y1="100" x2="0" y2="100"/></g><circle cx="100" cy="100" r="38" fill="#d9932b" opacity=".85"/></svg>
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Home • Farm • Business • RV</p>
+      <h1>Power from the <span class="sun">same sun</span> that grows your corn.</h1>
+      <p class="hero-lede">We're a Nappanee-based solar crew serving Indiana homeowners, farm operators, and small businesses. No hype, no pressure — just a straight answer on whether solar pencils out for your property.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#quote">Get a Free Solar Quote</a>
+        <a class="btn btn-ghost" href="#learn">See How Solar Works</a>
+      </div>
+      <p class="hero-badge"><span class="stars" aria-hidden="true">★★★★½</span> Rated 4.5 across 58 local reviews</p>
+    </div>
+    <figure class="hero-figure reveal">
+      <img src="https://sesindiana.com/wp-content/uploads/2026/03/DSC_4203-1024x576-1.jpg" alt="Solar panel installation by Solar Energy Systems in northern Indiana" width="1024" height="576">
+      <figcaption>Installed in Amish Country, not a stock photo</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SIGNATURE PANEL STRIP DIVIDER -->
+<div class="panel-strip" role="presentation" aria-hidden="true">
+  <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+    <polygon points="0,90 0,34 600,10 1200,34 1200,90" fill="#243240"/>
+    <g fill="none" stroke="#d9932b" stroke-width="2" opacity=".85">
+      <line x1="60" y1="88" x2="60" y2="32"/><line x1="160" y1="88" x2="160" y2="28"/><line x1="260" y1="88" x2="260" y2="24"/><line x1="360" y1="88" x2="360" y2="20"/><line x1="460" y1="88" x2="460" y2="16"/><line x1="560" y1="88" x2="560" y2="12"/><line x1="660" y1="88" x2="660" y2="12"/><line x1="760" y1="88" x2="760" y2="16"/><line x1="860" y1="88" x2="860" y2="20"/><line x1="960" y1="88" x2="960" y2="24"/><line x1="1060" y1="88" x2="1060" y2="28"/><line x1="1140" y1="88" x2="1140" y2="32"/>
+      <polyline points="0,60 600,38 1200,60"/>
+    </g>
+    <polyline points="0,34 600,10 1200,34" fill="none" stroke="#e8b45f" stroke-width="4"/>
+  </svg>
+</div>
+
+<!-- WHAT WE INSTALL -->
+<section class="serve" id="serve">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">What we install</p>
+      <h2>One crew. Four kinds of rooflines.</h2>
+      <p class="intro">Most installers only do subdivisions. We've wired panels onto farmhouses, barn roofs, shop buildings, and fifth-wheels — because out here, one property is usually all four.</p>
+    </div>
+    <div class="row-svc reveal">
+      <span class="num">01</span>
+      <div>
+        <h3>Residential Solar</h3>
+        <p>Rooftop and ground-mount systems sized to your actual usage — not an upsell. We handle Indiana permitting and utility interconnection paperwork so you don't have to learn it.</p>
+        <span class="tag">Homes &amp; Farmhouses</span>
+      </div>
+    </div>
+    <div class="row-svc reveal">
+      <span class="num">02</span>
+      <div>
+        <h3>Farm &amp; Agricultural Solar</h3>
+        <p>Barns, grain operations, poultry and dairy buildings — big south-facing roofs and steady daytime loads make farms some of the best solar candidates in the state. This is our home turf.</p>
+        <span class="tag">Our Specialty</span>
+      </div>
+    </div>
+    <div class="row-svc reveal">
+      <span class="num">03</span>
+      <div>
+        <h3>Commercial Solar</h3>
+        <p>Shops, warehouses, and small-business buildings across Elkhart County and beyond. Cut a fixed operating cost and know your energy bill years ahead.</p>
+        <span class="tag">Small Business</span>
+      </div>
+    </div>
+    <div class="row-svc reveal">
+      <span class="num">04</span>
+      <div>
+        <h3>RV Solar Solutions</h3>
+        <p>We're in the RV capital of the world — so yes, we do RV solar right. Panels, batteries, and charge systems for boondocking without the generator drone.</p>
+        <span class="tag">Elkhart Country Original</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PANEL STRIP (flipped) -->
+<div class="panel-strip flip" role="presentation" aria-hidden="true">
+  <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+    <polygon points="0,90 0,34 600,10 1200,34 1200,90" fill="#243240"/>
+    <g fill="none" stroke="#d9932b" stroke-width="2" opacity=".85">
+      <line x1="60" y1="88" x2="60" y2="32"/><line x1="160" y1="88" x2="160" y2="28"/><line x1="260" y1="88" x2="260" y2="24"/><line x1="360" y1="88" x2="360" y2="20"/><line x1="460" y1="88" x2="460" y2="16"/><line x1="560" y1="88" x2="560" y2="12"/><line x1="660" y1="88" x2="660" y2="12"/><line x1="760" y1="88" x2="760" y2="16"/><line x1="860" y1="88" x2="860" y2="20"/><line x1="960" y1="88" x2="960" y2="24"/><line x1="1060" y1="88" x2="1060" y2="28"/><line x1="1140" y1="88" x2="1140" y2="32"/>
+      <polyline points="0,60 600,38 1200,60"/>
+    </g>
+    <polyline points="0,34 600,10 1200,34" fill="none" stroke="#e8b45f" stroke-width="4"/>
+  </svg>
+</div>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">How it goes</p>
+      <h2>A conversation, not a sales pitch.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="mark">1</span>
+        <div>
+          <h3>We Talk</h3>
+          <p>You show us a power bill and tell us about your property. We tell you honestly whether solar makes sense — and if it doesn't, we'll say so.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="mark">2</span>
+        <div>
+          <h3>We Plan</h3>
+          <p>A system design and quote built for your roofline, your usage, and your utility. We know the local permitting and interconnection process cold.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="mark">3</span>
+        <div>
+          <h3>We Install</h3>
+          <p>Our own crew does the work, walks you through your new system, and sticks around for questions after the last panel is bolted down.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW SOLAR WORKS -->
+<section class="learn" id="learn">
+  <div class="wrap learn-grid">
+    <div class="reveal">
+      <p class="eyebrow">Solar education</p>
+      <h2>Understand it before you buy it.</h2>
+      <p>We'd rather explain solar than sell it. Here's the short version — and when you call, we'll gladly give you the long one, in plain English.</p>
+      <ul>
+        <li>Panels turn Indiana sunlight into DC electricity — even on cloudy days.</li>
+        <li>An inverter converts it to the AC power your home, barn, or shop runs on.</li>
+        <li>Extra power flows back to your utility or into batteries for later.</li>
+        <li>Your meter and your bill both start running the right direction.</li>
+      </ul>
+    </div>
+    <svg class="sun-diagram reveal" viewBox="0 0 420 320" role="img" aria-label="Diagram of sunlight hitting a solar panel on a barn roof, feeding an inverter and the home">
+      <circle cx="70" cy="60" r="30" fill="#d9932b"/>
+      <g stroke="#d9932b" stroke-width="4" stroke-linecap="round"><line x1="70" y1="12" x2="70" y2="24"/><line x1="70" y1="96" x2="70" y2="108"/><line x1="22" y1="60" x2="34" y2="60"/><line x1="106" y1="60" x2="118" y2="60"/><line x1="36" y1="26" x2="45" y2="35"/><line x1="95" y1="85" x2="104" y2="94"/><line x1="36" y1="94" x2="45" y2="85"/><line x1="95" y1="35" x2="104" y2="26"/></g>
+      <g stroke="#e8b45f" stroke-width="3" stroke-dasharray="6 6"><line x1="110" y1="95" x2="185" y2="145"/><line x1="95" y1="115" x2="165" y2="165"/></g>
+      <polygon points="150,200 260,140 370,200" fill="#8f2d1e"/>
+      <rect x="165" y="200" width="190" height="80" fill="#a9433a"/>
+      <rect x="245" y="230" width="34" height="50" fill="#33241a"/>
+      <g transform="rotate(-28 255 152)"><rect x="195" y="140" width="120" height="26" fill="#243240" stroke="#e8b45f" stroke-width="2"/><g stroke="#3a4c5e" stroke-width="2"><line x1="215" y1="140" x2="215" y2="166"/><line x1="235" y1="140" x2="235" y2="166"/><line x1="255" y1="140" x2="255" y2="166"/><line x1="275" y1="140" x2="275" y2="166"/><line x1="295" y1="140" x2="295" y2="166"/></g></g>
+      <rect x="185" y="235" width="26" height="34" fill="#243240" stroke="#e8b45f" stroke-width="2"/>
+      <path d="M198 240 l-6 12 h6 l-6 12" stroke="#e8b45f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <line x1="0" y1="290" x2="420" y2="290" stroke="#33241a" stroke-width="4"/>
+      <g fill="#7ea3b3"><rect x="30" y="245" width="8" height="45"/><rect x="52" y="255" width="8" height="35"/><rect x="390" y="252" width="8" height="38"/></g>
+      <text x="30" y="312" font-family="Barlow Condensed" font-size="15" fill="#33241a" letter-spacing="2">SUN → PANEL → INVERTER → YOUR PLACE</text>
+    </svg>
+  </div>
+</section>
+
+<!-- PANEL STRIP -->
+<div class="panel-strip" role="presentation" aria-hidden="true" style="background:var(--cream-deep)">
+  <svg viewBox="0 0 1200 90" preserveAspectRatio="none">
+    <polygon points="0,90 0,34 600,10 1200,34 1200,90" fill="#6e2015"/>
+    <g fill="none" stroke="#e8b45f" stroke-width="2" opacity=".7">
+      <line x1="100" y1="88" x2="100" y2="30"/><line x1="220" y1="88" x2="220" y2="26"/><line x1="340" y1="88" x2="340" y2="21"/><line x1="460" y1="88" x2="460" y2="16"/><line x1="580" y1="88" x2="580" y2="11"/><line x1="700" y1="88" x2="700" y2="14"/><line x1="820" y1="88" x2="820" y2="19"/><line x1="940" y1="88" x2="940" y2="24"/><line x1="1060" y1="88" x2="1060" y2="28"/>
+      <polyline points="0,60 600,38 1200,60"/>
+    </g>
+    <polyline points="0,34 600,10 1200,34" fill="none" stroke="#d9932b" stroke-width="4"/>
+  </svg>
+</div>
+
+<!-- PROOF -->
+<section class="proof" id="proof" style="padding-top:2.5rem">
+  <div class="wrap proof-grid">
+    <div class="reveal">
+      <p class="big-rating">4.5<small>58 local reviews</small></p>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Proof over hype</p>
+      <h2>Our neighbors are our references.</h2>
+      <p>We don't run on billboards and pushy sales calls. We run on finished installs across Nappanee, Elkhart County, and the surrounding farm communities — and the people who'll tell you how theirs went. Ask us for real customer success stories on properties like yours, and we'll put you in front of them.</p>
+      <p style="margin-top:1.25rem"><a class="btn btn-ghost on-dark" href="#quote">Talk To Us — No Pressure</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE / CONTACT -->
+<section class="quote" id="quote">
+  <div class="wrap quote-grid">
+    <div class="reveal">
+      <p class="eyebrow">The next step</p>
+      <h2>Get a free, honest solar quote.</h2>
+      <p class="lede">Tell us what you're powering — a farmhouse, a hog barn, a storefront, or a fifth-wheel — and we'll tell you what solar would actually cost and actually save. If it doesn't make sense for you, we'll say that too.</p>
+      <dl class="contact-facts">
+        <div><dt>Phone</dt><dd><a href="tel:+15747730546">(574) 773-0546</a></dd></div>
+        <div><dt>Shop</dt><dd>8015 W 1350 N, Suite A<br>Nappanee, IN 46550</dd></div>
+        <div><dt>Web</dt><dd><a href="https://sesindiana.com">sesindiana.com</a></dd></div>
+        <div><dt>Serving</dt><dd>Nappanee, Elkhart County &amp; Indiana Amish Country farm communities</dd></div>
+      </dl>
+    </div>
+    <form class="qform reveal" aria-label="Free solar quote request">
+      <h3>Request Your Quote</h3>
+      <label for="f-name">Name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+      <label for="f-phone">Phone or Email</label>
+      <input id="f-phone" name="contact" type="text" autocomplete="tel" required>
+      <label for="f-type">Property Type</label>
+      <select id="f-type" name="type">
+        <option>Home</option>
+        <option>Farm / Agricultural</option>
+        <option>Commercial / Small Business</option>
+        <option>RV</option>
+        <option>Mix of the above</option>
+      </select>
+      <label for="f-msg">Anything we should know?</label>
+      <textarea id="f-msg" name="message" rows="3" placeholder="Roof age, monthly bill, what you're hoping for…"></textarea>
+      <button type="submit">Send My Quote Request</button>
+      <p class="fineprint">Prefer to talk? Call <a href="tel:+15747730546">(574) 773-0546</a>. Free consultation, zero pressure, and we answer our phone like a local business should.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="brand-name" style="font-size:1.5rem">Solar Energy Systems LLC<small style="color:#d9932b">Sun &amp; soil since day one</small></p>
+        <p style="margin-top:1rem;max-width:26rem">Residential, commercial, farm, and RV solar installations across northern Indiana — designed, permitted, and installed by a local Nappanee crew.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="foot-nav">
+          <li><a href="#serve">What We Install</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#learn">How Solar Works</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="foot-nav">
+          <li><a href="tel:+15747730546">(574) 773-0546</a></li>
+          <li style="font-family:'Barlow Condensed';text-transform:uppercase;letter-spacing:.12em;font-weight:700">8015 W 1350 N Suite A<br>Nappanee, IN 46550</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Solar Energy Systems LLC. All rights reserved.</span>
+      <span class="credit">Website sample by Wild Card Creative Co</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
